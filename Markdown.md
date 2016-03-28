@@ -157,3 +157,139 @@ __Bold__
 
 **Bold**  
 __Bold__
+
+## 強調 + 斜体
+
+強調 + 斜体は、アスタリスク、またはアンダースコア3個で文字列を囲みます。
+
+### 記述方法
+
+```
+***BoldItalic***
+___BoldItalic___
+```
+
+### 表示
+
+***BoldItalic***  
+___BoldItalic___
+
+## 水平線
+
+水平線は、アンダースコア、アスタリスク、ハイフンを3個以上連続して記述します。(連続するハイフン等の間にスペースがあっても良い)
+
+### 記述方法
+
+```
+***
+___
+---
+* * *
+```
+
+### 表示
+
+***
+
+___
+
+---
+
+* * *
+
+## リンク
+
+リンクは、[表示文字](URL)の形式で記述します。
+
+### 記述方法
+
+```
+[Github](https://github.com/)
+```
+
+### 表示
+
+[Github](https://github.com/)
+
+## 定義参照リンク
+
+Markdownの文中に長いリンク(URL)を記述したくない場合や、同じリンクを複数回利用する場合は、  
+リンク先への参照を定義できます。
+
+### 記述方法
+
+```
+[Github][github]
+[ギットハブ][github]
+
+[github]: https://github.com/
+```
+
+### 表示
+
+[Github][github]
+[ギットハブ][github]
+
+[github]: https://github.com/
+
+## リンクテキスト簡易記法 (GFM)
+
+URLは記述するだけで自動的にハイパーリンクになります。(表示はURLのままとなります。)
+
+※ GFM : Github Flavored Markdown。Github独自仕様のMarkdownの記述方法です。
+
+### 記述方法
+
+```
+https://github.com/
+```
+
+### 表示
+
+https://github.com/
+
+## 取り消し線 (GFM)
+
+チルダ2個で文字列を囲みます。
+
+### 記述方法
+
+```
+~~記述を削除~~
+```
+
+### 表示
+
+~~記述を削除~~
+
+## pre記法 (GFM)
+
+チルダ3個を使用します。
+
+### 記述方法
+
+```
+~~~
+int main( int argc, char *argv[] )
+{
+    printf( "Hello, world!!\n" );
+
+    return 0;
+}
+~~~
+```
+
+## 表示
+
+~~~
+int main( int argc, char *argv[] )
+{
+    printf( "Hello, world!!\n" );
+
+    return 0;
+}
+~~~
+
+
+
+
